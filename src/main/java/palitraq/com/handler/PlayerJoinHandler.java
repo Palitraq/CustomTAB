@@ -64,10 +64,13 @@ public class PlayerJoinHandler {
             String tps = String.format("%.1f", calculateTPS());
 
             // Заменяем плейсхолдеры на значения с сохранением форматирования
-            String headerText = config.header;
+            String headerText = config.header
+                .replace("%PLAYERS%", players)
+                .replace("%TPS%", tps);
+                
             String footerText = config.footer
                 .replace("%PLAYERS%", players)
-                .replace("%TPS%", "§5" + tps);
+                .replace("%TPS%", tps);
 
             // Создаем компоненты текста с поддержкой цветовых кодов
             MutableText header = Text.literal(headerText);
