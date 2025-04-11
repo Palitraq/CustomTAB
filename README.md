@@ -68,8 +68,8 @@ Variables:
 ```json
 {
     "enabled": true,
-    "header": "§6§lServer Name\n§bTPS: §a%TPS%\n§ePlayers: §a%PLAYERS%",
-    "footer": "§d§lwww.example.com"
+    "header": "§6§lCustomTAB\n§eTPS: %TPS%\n§aPlayers: %PLAYERS%",
+    "footer": "§e§lMade with §c§l❤"
 }
 ```
 
