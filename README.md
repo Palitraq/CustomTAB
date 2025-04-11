@@ -4,7 +4,7 @@ A lightweight Fabric mod that enhances your server's TAB list with customizable 
 
 ![Modrinth Version](https://img.shields.io/modrinth/v/customtab)
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/customtab)
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.20.1-green)
+![Minecraft Version](https://img.shields.io/badge/Minecraft-1.19.2-green)
 
 ## Features
 - 🎨 Fully customizable header and footer
@@ -57,8 +57,9 @@ Formatting:
 §o is italic
 ```
 
-Variables (UPPERCASE only):
+Variables:
 ```
+\n - new line
 %TPS% - shows server TPS
 %PLAYERS% - shows online players count
 ```
