@@ -3,13 +3,11 @@ package palitraq.com.config;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.server.MinecraftServer;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.text.DecimalFormat;
 import java.nio.file.Files;
 
 public class TabConfig {
@@ -18,7 +16,6 @@ public class TabConfig {
         .setLenient()
         .create();
     private static final File CONFIG_FILE = new File(FabricLoader.getInstance().getConfigDir().toFile(), "customtab.json");
-    private static final DecimalFormat TPS_FORMAT = new DecimalFormat("#.##");
     
     public boolean enabled = true;
     public String header = "§6§lCustomTAB\n§eTPS: %TPS%\n§aPlayers: %PLAYERS%";
@@ -85,27 +82,5 @@ public class TabConfig {
             e.printStackTrace();
             save(); // Fallback to basic save if example fails
         }
-    }
-    
-    public String formatHeader(MinecraftServer server) {
-        String result = header;
-        
-        // Replace variables with actual values
-        double meanTickTime = mean(server.lastTickLengths) * 1.0E-6D;
-        double tps = Math.min(1000.0 / meanTickTime, 20.0);
-        
-        // Заменяем только переменные в верхнем регистре
-        result = result.replace("%TPS%", TPS_FORMAT.format(tps));
-        result = result.replace("%PLAYERS%", String.valueOf(server.getCurrentPlayerCount()));
-        
-        return result;
-    }
-    
-    private static double mean(long[] values) {
-        long sum = 0L;
-        for (long v : values) {
-            sum += v;
-        }
-        return (double) sum / (double) values.length;
     }
 } 
