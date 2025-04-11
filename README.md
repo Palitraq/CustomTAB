@@ -4,7 +4,7 @@ A lightweight Fabric mod that enhances your server's TAB list with customizable 
 
 ![Modrinth Version](https://img.shields.io/modrinth/v/customtab)
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/customtab)
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.19.2-green)
+![Minecraft Version](https://img.shields.io/badge/Minecraft-1.20.1-green)
 
 ## Features
 - 🎨 Fully customizable header and footer
@@ -14,8 +14,8 @@ A lightweight Fabric mod that enhances your server's TAB list with customizable 
 - 🔧 Easy configuration through JSON file
 
 ## Installation
-1. Install [Fabric Loader >=0.16.9](https://fabricmc.net/use/)
-2. Install [Fabric API 0.77.0](https://modrinth.com/mod/fabric-api)
+1. Install [Fabric Loader](https://fabricmc.net/use/)
+2. Install [Fabric API](https://modrinth.com/mod/fabric-api)
 3. Download CustomTAB from [Modrinth](https://modrinth.com/mod/customtab)
 4. Place the mod in your `mods` folder
 5. Start the server
@@ -57,19 +57,18 @@ Formatting:
 §o is italic
 ```
 
-Variables:
+Variables (UPPERCASE only):
 ```
-#N next line
-#TPS show ticks per second
-#PLAYERS show how many players are online
+%TPS% - shows server TPS
+%PLAYERS% - shows online players count
 ```
 
 ### Example Configuration
 ```json
 {
     "enabled": true,
-    "header": "§6§lCustomTAB\n§eTPS: %TPS%\n§aPlayers: %PLAYERS%",
-    "footer": "§e§lMade with §c§l❤"
+    "header": "§6§lServer Name\n§bTPS: §a%TPS%\n§ePlayers: §a%PLAYERS%",
+    "footer": "§d§lwww.example.com"
 }
 ```
 

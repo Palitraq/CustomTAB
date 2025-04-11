@@ -63,10 +63,7 @@ public class TabConfig {
         }
         
         try (FileReader reader = new FileReader(CONFIG_FILE)) {
-            String content = Files.readString(CONFIG_FILE.toPath());
-            // Удаляем комментарии перед парсингом JSON
-            content = content.replaceAll("//.*\\n", "");
-            return GSON.fromJson(content, TabConfig.class);
+            return GSON.fromJson(reader, TabConfig.class);
         } catch (IOException e) {
             e.printStackTrace();
             return new TabConfig();
@@ -96,6 +93,8 @@ public class TabConfig {
         // Replace variables with actual values
         double meanTickTime = mean(server.lastTickLengths) * 1.0E-6D;
         double tps = Math.min(1000.0 / meanTickTime, 20.0);
+        
+        // Заменяем только переменные в верхнем регистре
         result = result.replace("%TPS%", TPS_FORMAT.format(tps));
         result = result.replace("%PLAYERS%", String.valueOf(server.getCurrentPlayerCount()));
         
