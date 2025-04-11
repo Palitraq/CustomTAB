@@ -14,8 +14,8 @@ A lightweight Fabric mod that enhances your server's TAB list with customizable 
 - 🔧 Easy configuration through JSON file
 
 ## Installation
-1. Install [Fabric Loader](https://fabricmc.net/use/)
-2. Install [Fabric API](https://modrinth.com/mod/fabric-api)
+1. Install [Fabric Loader >=0.16.9](https://fabricmc.net/use/)
+2. Install [Fabric API 0.77.0](https://modrinth.com/mod/fabric-api)
 3. Download CustomTAB from [Modrinth](https://modrinth.com/mod/customtab)
 4. Place the mod in your `mods` folder
 5. Start the server
