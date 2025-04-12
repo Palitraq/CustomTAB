@@ -14,8 +14,8 @@ A lightweight Fabric mod that enhances your server's TAB list with customizable 
 - 🔧 Easy configuration through JSON file
 
 ## Installation
-1. Install [Fabric Loader](https://fabricmc.net/use/)
-2. Install [Fabric API](https://modrinth.com/mod/fabric-api)
+1. Install [Fabric Loader >=0.16.9](https://fabricmc.net/use/)
+2. Install [Fabric API 0.77.0](https://modrinth.com/mod/fabric-api)
 3. Download CustomTAB from [Modrinth](https://modrinth.com/mod/customtab)
 4. Place the mod in your `mods` folder
 5. Start the server
@@ -46,19 +46,13 @@ Colors:
 §d is light purple
 §e is yellow
 §f is white
-```
-
-Formatting:
-```
+---
 §k is obfuscated
 §l is bold
 §m is strikethrough
 §n is underline
 §o is italic
-```
-
-Variables:
-```
+---
 \n - new line
 %TPS% - shows server TPS
 %PLAYERS% - shows online players count
@@ -68,8 +62,8 @@ Variables:
 ```json
 {
     "enabled": true,
-    "header": "§6§lServer Name\n§bTPS: §a%TPS%\n§ePlayers: §a%PLAYERS%",
-    "footer": "§d§lwww.example.com"
+    "header": "§6§lCustomTAB\n§eTPS: %TPS%\n§aPlayers: %PLAYERS%",
+    "footer": "§e§lMade with §c§l❤"
 }
 ```
 
@@ -88,12 +82,6 @@ git clone https://github.com/Palitraq/CustomTAB.git
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest new features
-- Submit pull requests
 
 ## Support
 If you encounter any issues or have questions:
