@@ -1,6 +1,6 @@
 # CustomTAB
 
-A lightweight Fabric mod that enhances your server's TAB list with customizable header and footer.
+A lightweight Fabric(for now) mod that enhances your server's TAB list with customizable header and footer.
 
 ![Modrinth Version](https://img.shields.io/modrinth/v/customtab)
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/customtab)
