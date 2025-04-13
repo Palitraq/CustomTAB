@@ -27,8 +27,6 @@ The configuration file is located at:
 ```
 
 ### Available Formatting
-
-Colors:
 ```
 §0 is black
 §1 is dark blue
