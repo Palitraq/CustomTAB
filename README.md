@@ -4,7 +4,7 @@ A lightweight Fabric(for now) mod that enhances your server's TAB list with cust
 
 ![Modrinth Version](https://img.shields.io/modrinth/v/customtab)
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/customtab)
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.19.2-green)
+![Minecraft Version](https://img.shields.io/badge/Minecraft-1.19.1-green)
 
 ## Features
 - 🎨 Fully customizable header and footer
