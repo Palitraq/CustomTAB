@@ -68,10 +68,10 @@ The configuration file is located at:
 ## Building from Source
 1. Clone the repository
 ```bash
-git clone -b 1.19.1 https://github.com/Palitraq/CustomTAB.git```
+git clone -b 1.19.1 https://github.com/Palitraq/CustomTAB.git
 
 2. Build the project
-```bash
+
 ./gradlew build
 ```
 
