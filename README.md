@@ -3,7 +3,7 @@
 A lightweight Fabric(for now) mod that enhances your server's TAB list with customizable header and footer.
 
 ![Modrinth Downloads](https://img.shields.io/modrinth/dt/customtab)
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.19-green)
+![Minecraft Version](https://img.shields.io/badge/Minecraft-1.19.4-green)
 
 ## Features
 - 🎨 Fully customizable header and footer
@@ -15,7 +15,7 @@ A lightweight Fabric(for now) mod that enhances your server's TAB list with cust
 ## Installation
 1. Install [Fabric Loader >=0.16.9](https://fabricmc.net/use/)
 2. Install [Fabric API](https://modrinth.com/mod/fabric-api)
-3. Download CustomTAB from [Modrinth](https://modrinth.com/mod/customtab)
+3. Download CustomTAB from [Modrinth](https://modrinth.com/mod/customtab) or [CurseForge](https://curseforge.com/minecraft/mc-mods/customtab)
 4. Place the mod in your `mods` folder
 5. Start the server
 
@@ -67,7 +67,7 @@ The configuration file is located at:
 ## Building from Source
 1. Clone the repository
 ```bash
-git clone -b 1.19 https://github.com/Palitraq/CustomTAB.git
+git clone -b 1.19.4 https://github.com/Palitraq/CustomTAB.git
 
 2. Build the project
 
