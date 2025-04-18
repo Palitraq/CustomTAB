@@ -6,6 +6,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.text.MutableText;
+import net.minecraft.text.LiteralText;
 import palitraq.com.config.TabConfig;
 
 public class PlayerJoinHandler {
@@ -73,8 +74,8 @@ public class PlayerJoinHandler {
                 .replace("%TPS%", tps);
 
             // Создаем компоненты текста с поддержкой цветовых кодов
-            MutableText header = Text.literal(headerText);
-            MutableText footer = Text.literal(footerText);
+            MutableText header = new LiteralText(headerText);
+            MutableText footer = new LiteralText(footerText);
 
             // Отправляем пакет
             PlayerListHeaderS2CPacket packet = new PlayerListHeaderS2CPacket(header, footer);
